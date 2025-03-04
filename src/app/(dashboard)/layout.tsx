@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { motion } from "framer-motion";
+import { AuthProvider } from "../context/AuthContext";
+import { TrendProvider } from "../context/TrendContext";
 
 export const metadata: Metadata = {
   title: "AI Trend Analytics",
@@ -28,9 +30,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;700&family=Orbitron:wght@400;700&display=swap"
         />
       </head>
-      <body className="bg-background text-text font-sans">
-          {children}
-      </body>
+      <AuthProvider>
+        <TrendProvider>
+          <body className="bg-background text-text font-sans">
+            {children}
+          </body>
+        </TrendProvider>
+      </AuthProvider>
     </html>
   );
 }

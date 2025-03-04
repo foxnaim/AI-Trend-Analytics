@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation"; // ✅ исправлен импорт
+import { useRouter } from "next/navigation"; 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TrendChart from "@/app/components/TrendChart/TrendChart";

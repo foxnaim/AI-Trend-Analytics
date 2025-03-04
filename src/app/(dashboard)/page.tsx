@@ -1,4 +1,4 @@
-"use client";
+"use client"; // 🔹 Добавляем в начало файла
 
 import { motion } from "framer-motion";
 import TrendCard from "@/app/components/TrendCard/TrendCard";
@@ -67,7 +67,15 @@ const Dashboard = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <TrendCard trend={trend} />
+              <TrendCard 
+                id={trend.id.toString()}
+                title={trend.title}
+                description="Описание тренда отсутствует" 
+                image="https://via.placeholder.com/150"
+                mentions={Math.floor(Math.random() * 1000)} 
+                likes={Math.floor(Math.random() * 500)}
+                shares={Math.floor(Math.random() * 200)}
+              />
             </motion.div>
           ))
         )}

@@ -13,6 +13,7 @@ interface TrendCardProps {
   shares: number;
 }
 
+
 export default function TrendCard({ id, title, description, image, mentions, likes, shares }: TrendCardProps) {
   const router = useRouter();
 
