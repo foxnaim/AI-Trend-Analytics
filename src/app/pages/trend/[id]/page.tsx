@@ -1,6 +1,6 @@
 "use client";
 
-import { useTrends } from "@/context/TrendContext";
+import { useTrends } from "@/app/context/TrendContext";
 import { useParams } from "next/navigation";
 
 export default function TrendDetailsPage() {

@@ -6,9 +6,9 @@ import { useRouter } from "next/navigation";
 import { FaHome, FaChartLine, FaUser } from "react-icons/fa";
 
 const icons = [
-  { id: "home", icon: <FaHome />, name: "Главная", link: "/dashboard" },
-  { id: "trend", icon: <FaChartLine />, name: "Тренды", link: "/trend/1" },
-  { id: "profile", icon: <FaUser />, name: "Профиль", link: "/profile" },
+  { id: "home", icon: <FaHome />, name: "Главная", link: "/" },
+  { id: "trend", icon: <FaChartLine />, name: "Тренды", link: "/pages/trend/[id]/" },
+  { id: "profile", icon: <FaUser />, name: "Профиль", link: "/pages/Profile/" },
 ];
 
 export default function Sidebar() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTrends } from "@/context/TrendContext";
+import { useTrends } from "@/app/context/TrendContext";
 import Link from "next/link";
 
 export default function HomePage() {
