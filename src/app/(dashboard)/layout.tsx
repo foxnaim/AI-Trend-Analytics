@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@/app/styles/globals.css";
+import "./globals.css";
 import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
