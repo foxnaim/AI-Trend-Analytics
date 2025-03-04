@@ -1,7 +1,9 @@
+"use client"
+
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import TrendChart from "@/components/TrendChart";
+import TrendChart from "@/app/components/TrendChart/TrendChart";
 import { getTrendById } from "@/lib/api";
 
 export default function TrendDetailPage() {
