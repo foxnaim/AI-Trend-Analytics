@@ -1,37 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+
+# 📊 AI-Trend-Analytics
+
+**AI-driven trend analysis dashboard with real-time data visualization**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+</div>
+
+---
+
+## About
+
+AI-Trend-Analytics is a dashboard that uses artificial intelligence to analyze trends across various data sources. Features real-time visualizations, predictive analytics, and customizable reports.
+
+## Features
+
+- 📈 **Trend Detection** — AI-powered pattern recognition in data streams
+- 📊 **Interactive Charts** — Real-time data visualization with dynamic graphs
+- 🔮 **Predictions** — ML-based forecasting and trend predictions
+- 🎨 **Custom Dashboards** — Build personalized analytics views
+- 🗄️ **Database** — Prisma ORM with structured data storage
+- ⚡ **Real-time** — Live data updates and streaming
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js |
+| Language | TypeScript |
+| Database | Prisma ORM |
+| Styling | Tailwind CSS, shadcn/ui |
+| AI/ML | Machine Learning APIs |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
+git clone https://github.com/foxnaim/AI-Trend-Analytics.git
+cd AI-Trend-Analytics
+
+yarn install
+
+# Set up database
+npx prisma generate
+npx prisma db push
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# AI-Trend-Analytics
+MIT © [foxnaim](https://github.com/foxnaim)
