@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@prisma/client": "^6.4.1",
+    "@prisma/client": "^7.4.1",
     "@radix-ui/react-slot": "^1.1.2",
     "axios": "^1.8.1",
     "bcrypt": "^5.1.1",
